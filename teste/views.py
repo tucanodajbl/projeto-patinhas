@@ -5,7 +5,7 @@ from teste.models import Animal, func
 
 class AnimaisView(ListView):
     model = Animal
-    template_name = '.html'
+    template_name = 'lista.html'
     
 class funcView(ListView):
     model = func
