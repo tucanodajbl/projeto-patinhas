@@ -1,9 +1,12 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, CreateView
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from teste.models import Animal, func
 
-class AnimaisView(ListView):
+def animal(request):
+    return render(request, 'lista.html')
+
+class AnimaisListView(ListView):
     model = Animal
     template_name = 'lista.html'
     
