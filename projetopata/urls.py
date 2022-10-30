@@ -18,11 +18,13 @@ from django.urls import path
 
 from teste import views
 from teste.views import AnimaisListView
+from teste.views import funcView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path ('/', TemplateView.as_view( template_name ='Login.html') ),
-    #path ('/', TemplateView.as_view( template_name ='cadastro') )
-    # URL listagem
-    path('animais/', AnimaisListView.as_view(), name='animal')
+    path ('login/', funcView.as_view( template_name ='Login.html') ),
+    path ('cadastro/', funcView.as_view( template_name ='cadastro.html') ),
+    path('animais/', AnimaisListView.as_view(template_name='lista.hmtl') ),
+    path ('animcad/', AnimaisListView.as_view( template_name ='Animcad.html') ),
+
 ]
