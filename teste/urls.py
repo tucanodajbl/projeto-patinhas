@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.urls import paths
 from . import views
 from teste import views
 from teste.views import AnimaisListView

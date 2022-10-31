@@ -24,7 +24,7 @@ from django.urls import path,include, URLPattern
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include ("django.contrib.auth.urls")),
-    path('teste/', include('lista.html', name='teste'))
+    path('teste/', include('teste.urls'), name='teste')
    
 
 ]
