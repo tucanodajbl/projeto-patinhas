@@ -12,7 +12,7 @@ class AnimaisListView(ListView):
     
 class funcView(ListView):
     model = func
-    template_name = 'Login.html'
+    template_name = 'login.html'
     
 # {% for publisher in object_list %}
 #        <li>{{ publisher.name }}</li>

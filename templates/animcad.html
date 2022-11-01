@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href="animcad.css">
-    <link rel="shortcut icon" href="images/LOBISOMWEM.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href='{% static "animcad.css" %}'>
 </head>
 <body>
     <section class="login-container">
@@ -14,11 +14,11 @@
             <h1>Cadastre-se</h1>
             <input type="text" class="input-button" placeholder="Nome do animal">
             <br><br>
-            <input type="password" class="input-button" placeholder="Email">
+            <input type="text" class="input-button" placeholder="Raça">
             <br><br>
-            <input type="password" class="input-button" placeholder="Senha">
+            <input type="text" class="input-button" placeholder="Porte">
             <br><br>
-            <input type="password" class="input-button" placeholder="Confirmar senha">
+            <input type="text" class="input-button" placeholder="Idade aproximada">
             <br><br>
             <button>Enviar</button>
             <p><a href="/"> Esqueci minha senha</a></p>
