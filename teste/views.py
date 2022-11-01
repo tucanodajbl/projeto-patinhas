@@ -1,4 +1,4 @@
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, TemplateView
 from django.shortcuts import render
 from django.http import HttpResponse
 from teste.models import Animal, func
@@ -13,6 +13,10 @@ class AnimaisListView(ListView):
 class funcView(ListView):
     model = func
     template_name = 'login.html'
+
+class homeView(TemplateView):
+    template_name = 'home.html'
+    
     
 # {% for publisher in object_list %}
 #        <li>{{ publisher.name }}</li>
