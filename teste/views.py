@@ -1,4 +1,4 @@
-from django.views.generic import ListView, CreateView, TemplateView, DetailView
+from django.views.generic import ListView, CreateView, TemplateView, DetailView, View
 from django.shortcuts import render
 from django.http import HttpResponse
 from teste.models import Animal, func
@@ -68,6 +68,7 @@ class funcView(ListView):
 
 class homeView(TemplateView):
     template_name = 'home.html'
+
     
     
 # {% for publisher in object_list %}

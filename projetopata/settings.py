@@ -127,3 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Rederec t t o home URL a f t e r l o g i n ( De f a u l t r e d i r e c t s t o / a c c o u n t s / p r o f i l e / )
 LOGIN_REDIRECT_URL = '/teste'
+
+LOGIN_URL = '/login'
