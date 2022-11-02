@@ -1,0 +1,9 @@
+{% if lista %}
+    <ul>
+    {% for animal in lista %}
+        <li><a href="/teste/{{ animal.id }}/">{{ animal.Nome }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Nenhum animal encontrado.</p>
+{% endif %}

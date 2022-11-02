@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'teste'
+    'teste.apps.TesteConfig'
 ]
 
 MIDDLEWARE = [
@@ -124,3 +124,6 @@ STATICFILES_DIRS = ( os.path.join('static'), )
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Rederec t t o home URL a f t e r l o g i n ( De f a u l t r e d i r e c t s t o / a c c o u n t s / p r o f i l e / )
+LOGIN_REDIRECT_URL = '/teste'

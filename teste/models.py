@@ -9,6 +9,9 @@ class Animal(models.Model):
     Cor_do_Pelo = models . CharField ( max_length =50)
     Observações = models . CharField ( max_length =300)
 
+    def __str__(self):
+        return self.Nome
+
 class func(models.Model):
     Usuário = models . CharField ( max_length =50)
     Senha = models . CharField ( max_length = 20)
