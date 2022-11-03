@@ -5,6 +5,7 @@ from teste.models import Animal, func
 from django.http import Http404
 from .forms import AnimalForm
 from django.http import HttpResponseRedirect
+from django.contrib.auth.forms import UserCreationForm
 
 class IndexView(ListView):
     template_name = 'index.html'
@@ -54,6 +55,18 @@ class DetailView(DetailView):
 #    except Animal.DoesNotExist:
 #        raise Http404("Animal não encontrado")
 #    return render(request, 'detail.html', {'animal': animal})
+
+def registerPage(request):
+    tio = UserCreationForm()
+
+
+    if request.method == 'POST':
+        tio = UserCreationForm(request.POST)
+        if tio.is_valid():
+            tio.save()
+
+    context = {'tio': tio}
+    return render(request, 'register.html', context)
 
 def animal(request):
     return render(request, 'lista.html')
