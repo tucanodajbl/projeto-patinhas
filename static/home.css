@@ -3,7 +3,7 @@ body{
     background-color: #69b1a3;
 }
 
-.botoes{
+.geral{
     background-color: #69b1a3;
     position: absolute;
     top: 50%;
@@ -14,7 +14,7 @@ body{
     height: 320px;
 }
 
-.boto1{
+/*.boto1{
     background-color: aqua;
     position: relative;
     top: 35%;
@@ -26,4 +26,28 @@ body{
     background-color: aqua;
     position: relative;
     top: 50%;
+}*/
+
+.btn{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card_2{
+    width: 100%;
+}
+
+.img{
+    width: 50%;
+    align-items: center;
+}
+
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

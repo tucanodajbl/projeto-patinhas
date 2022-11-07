@@ -1,6 +1,22 @@
-<h1>{{ animal.Nome }}</h1>
-<h1>{{ animal.Raça }}</h1>
-<h1>{{ animal.Porte }}</h1>
-<h1>{{ animal.Idade_Aproximada }}</h1>
-<h1>{{ animal.Cor_do_Pelo }}</h1>
-<h1>{{ animal.Observações }}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{% static "/detail.css" %}'>
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="tit"><h1>Ficha do Animal</h1></div>
+    <div class="text"><h1>Nome: </h1> <h1> {{ animal.Nome }}</h1></div>
+    <div class="text"><h1>Raça: </h1> <h1> {{ animal.Raça }}</h1></div>
+    <div class="text"><h1>Porte: </h1> <h1> {{ animal.Porte }}</h1></div>
+    <div class="text"><h1>Idade: </h1> <h1> {{ animal.Idade_Aproximada }}</h2></div>
+    <div class="text"><h1>Cor: </h1> <h1> {{ animal.Cor_do_Pelo }}</h1></div>
+    <div class="text"><h1>OBS: </h1> <h1> {{ animal.Observações }}</h1></div>
+</body>
+</html>

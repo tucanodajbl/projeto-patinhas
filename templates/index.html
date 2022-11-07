@@ -2,20 +2,20 @@
 {% if lista %}
 <link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
 
-<section class="login-container">
-    <div class="menu-login">
-        
-    <ul>
+<div class="login-container">
     {% for animal in lista %}
-        <button class="btn"><a href="/teste/{{ animal.id }}/">{{ animal.Nome }}</button></li>
+    <button class="btn">
+        <a href="/teste/{{ animal.id }}/">{{ animal.Nome }}
+    </button>
+        
     {% endfor %}
-    </ul>
+
 {% else %}
     <p>Nenhum animal encontrado.</p>
 {% endif %}
 
-</div>
-</section>
 
-<p><a href="/teste/animcad/"> Cadastre um Novo Animal</a></p>
-<p><a href="/teste/logout"> Logout</a></p>
+</div>
+
+<a href="/teste/animcad/"><button class="btn3">Um Novo Animal</button></a>
+<a href="/teste/logout"><button class="btn3">Logout</button></a>
