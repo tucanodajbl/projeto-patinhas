@@ -1,11 +1,12 @@
 from django.views.generic import ListView, CreateView, TemplateView, DetailView, View
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from teste.models import Animal, func
 from django.http import Http404
 from .forms import AnimalForm
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import logout, authenticate
 
 class IndexView(ListView):
     template_name = 'index.html'
@@ -81,6 +82,10 @@ class funcView(ListView):
 
 class homeView(TemplateView):
     template_name = 'home.html'
+
+def logoutUser(request):
+    logout(request)
+    return redirect('home')
 
     
     

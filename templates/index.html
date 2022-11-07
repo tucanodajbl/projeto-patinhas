@@ -1,12 +1,21 @@
+{% load static %}
 {% if lista %}
+<link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
+
+<section class="login-container">
+    <div class="menu-login">
+        
     <ul>
     {% for animal in lista %}
-        <li><a href="/teste/{{ animal.id }}/">{{ animal.Nome }}</a></li>
+        <button class="btn"><a href="/teste/{{ animal.id }}/">{{ animal.Nome }}</button></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>Nenhum animal encontrado.</p>
 {% endif %}
 
-<p><a href="http://127.0.0.1:8000/teste/animcad/"> Cadastre um Novo Animal</a></p>
-<p><a href="http://127.0.0.1:8000/accounts/logout"> Logout</a></p>
+</div>
+</section>
+
+<p><a href="/teste/animcad/"> Cadastre um Novo Animal</a></p>
+<p><a href="/teste/logout"> Logout</a></p>

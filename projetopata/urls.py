@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from teste import views
-from teste.views import AnimaisListView
+from teste.views import AnimaisListView, homeView
 from teste.views import funcView
 from django.views.generic import TemplateView
 from django.urls import path,include, URLPattern
@@ -24,7 +24,9 @@ from django.urls import path,include, URLPattern
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include ("django.contrib.auth.urls")),
-    path('teste/', include('teste.urls'), name='teste')
+    path('teste/', include('teste.urls'), name='teste'),
+    path ('', homeView.as_view(), name='home' ),
+ 
    
 
 ]
