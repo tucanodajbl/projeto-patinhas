@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #69b1a3;
+}
+
+.geral{
+    background-color: #69b1a3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px;
+    border-radius: 15px;
+    height: 320px;
+}
+
+/*.boto1{
+    background-color: aqua;
+    position: relative;
+    top: 35%;
+    border-radius: 15px;
+    height: 32px;
+}
+
+.boto2{
+    background-color: aqua;
+    position: relative;
+    top: 50%;
+}*/
+
+.btn{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card_2{
+    width: 100%;
+}
+
+.img{
+    width: 50%;
+    align-items: center;
+}
+
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
