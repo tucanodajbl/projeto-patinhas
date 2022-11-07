@@ -1,1 +1,1 @@
-web: gunicorn institutopatas.wsgi
+web: gunicorn projetopata.wsgi
